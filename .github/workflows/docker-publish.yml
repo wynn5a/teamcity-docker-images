@@ -59,9 +59,9 @@ jobs:
           tar zxvf a.tar.gz
           cd ../../
     
-      - name: Generate files
-        run: |
-          ls ./ && sh generate.sh
+      #- name: Generate files
+      #  run: |
+      #    ls ./ && sh generate.sh
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
